@@ -23,11 +23,11 @@ def getNip():
     resp = list(client.clientes.cuentas.aggregate([
         {'$match': params},
     ]))[0]
-    # twilio.messages.create(
-        # to="+521" + request.args['numero_movil'],
-        # from_="+14242968994",
-        # body="Tu NIP es: " + resp['nip']
-    # )
+    twilio.messages.create(
+        to="+521" + request.args['numero_movil'],
+        from_="+14242968994",
+        body="Tu NIP es: " + resp['nip']
+    )
     return Response(dumps(resp), status=200, mimetype='application/json')
 
 ##########################
