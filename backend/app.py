@@ -12,7 +12,7 @@ CORS(app)
 
 app.config["DEBUG"] = True
 client = MongoClient('mongodb://debug:debug@mongo:27017')
-twilio = Client('ACa28eb624104391fcf176479f3eacc57a', '6e018782abf1c8aa5dc181422a1e046b')
+twilio = Client('ACa28eb624104391fcf176479f3eacc57a', '0ef759744208158b4b190d6ea86a5e85')
 
 @app.route('/api/v1/getNip', methods=['GET'])
 def getNip():

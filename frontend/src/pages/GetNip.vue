@@ -100,7 +100,7 @@ export default {
         fecha_vencimiento: '08/2021',
         fecha_vencimiento_mes: '',
         fecha_vencimiento_ano: '',
-        numero_movil: ''
+        numero_movil: '(55) 3723 2182'
       }
     }
   },
