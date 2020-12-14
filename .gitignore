@@ -281,7 +281,7 @@ compartamos/media/
 node_modules
 
 # Quasar core related directories
-.quasar
+/frontend/.quasar
 /frontend/dist
 
 # Cordova related directories and files

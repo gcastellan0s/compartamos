@@ -18,9 +18,9 @@ FEATURES
 * Flask_ - Python
 * Quasar.dev_ 2.0 - Javascript
 * Trabaja con Python_ 3.8
-* Renders Django projects with 100% starting test coverage
-* 12-Factor_ based settings via django-environ_
-* Secure by default. We believe in SSL.
+* 12-Factor_ Para variables de entorno python-environ_
+* Alta seguridad por default con certificados SSL via LetsEncrypt_.
+
 * Optimized development and production settings
 * Docker support using docker-compose_ for development and production (using Traefik_ with LetsEncrypt_ support)
 * Customizable SQLite_, RedisDB_ & MongoDB_ version
@@ -36,11 +36,12 @@ Integrations
 * Configuration for Celery_ and Flower_ (the latter in Docker setup only)
 * Integration with Sentry_ for error logging
 
-.. _Flask: https://www.djangoproject.com/
+.. _Flask: https://flask.palletsprojects.com/en/1.1.x/
 .. _Quasar.dev: https://quasar.dev/
 .. _Python: https://www.python.org/
 .. _django-environ: https://github.com/joke2k/django-environ
 .. _12-Factor: http://12factor.net/
+.. _LetsEncrypt: https://letsencrypt.org/
 .. _Celery: http://www.celeryproject.org/
 .. _Flower: https://github.com/mher/flower
 .. _Sentry: https://sentry.io/welcome/
