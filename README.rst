@@ -20,44 +20,21 @@ FEATURES
 * Trabaja con Python_ 3.8
 * 12-Factor_ Para variables de entorno python-environ_
 * Alta seguridad por default con certificados SSL via LetsEncrypt_.
+* Optimizada para configuración de desarrollo y produccion
+* Contenedores en Docker usando docker-compose_ para desarrollo y produccion
+* MongoDB_ como base de datos no relacional
+* NGINX_ como balanceador de carga
+* Kubernates_ como orquestador de contenedores y cargas
+* Websockets para comunicación con el API
+* Ambiente de pruebas con pytest
 
-* Optimized development and production settings
-* Docker support using docker-compose_ for development and production (using Traefik_ with LetsEncrypt_ support)
-* Customizable SQLite_, RedisDB_ & MongoDB_ version
-* Comes with custom user model ready to go
-* Optional basic ASGI setup for Websockets
-* Run tests with unittest or pytest
 
-Integrations
----------------------
-
-*These features can be enabled during initial project setup.*
-
-* Configuration for Celery_ and Flower_ (the latter in Docker setup only)
-* Integration with Sentry_ for error logging
-
-.. _Flask: https://flask.palletsprojects.com/en/1.1.x/
-.. _Quasar.dev: https://quasar.dev/
-.. _Python: https://www.python.org/
-.. _django-environ: https://github.com/joke2k/django-environ
-.. _12-Factor: http://12factor.net/
-.. _LetsEncrypt: https://letsencrypt.org/
-.. _Celery: http://www.celeryproject.org/
-.. _Flower: https://github.com/mher/flower
-.. _Sentry: https://sentry.io/welcome/
-.. _docker-compose: https://github.com/docker/compose
-.. _Traefik: https://traefik.io/
-.. _SQLite: https://www.sqlite.org/
-.. _RedisDB: https://redis.io/
-.. _MongoDB: https://www.mongodb.com/es
-.. _LetsEncrypt: https://letsencrypt.org/
-
-Prerequisites
+PREREQUISITOS
 -------------
 
-* Docker; if you don't have it yet, follow the `installation instructions`_;
+* Docker; Si necesita instalarlo siga las `siguientes instrucciones`_;
 
-.. _`installation instructions`: https://docs.docker.com/install/#supported-platforms
+.. _`siguientes instrucciones`: https://docs.docker.com/install/#supported-platforms
 
 CSV Files to work
 -------------
