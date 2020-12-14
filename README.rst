@@ -36,44 +36,14 @@ PREREQUISITOS
 
 .. _`siguientes instrucciones`: https://docs.docker.com/install/#supported-platforms
 
-CSV Files to work
+
+Ejecuta el proyecto
 -------------
 
-Copy your CSV files in `/temp/backend/files` before run build
-
-Build the Stack
--------------
-
-This brings up both Django and PostgreSQL. The first time it is run it might take a while to get started, but subsequent runs will occur quickly.
-
-Open a terminal at the project root and run the following for local development::
+Abra su terminal y corra el siguiente comando para desarrollo::
 
     $ docker-compose -f local.yml build
-
-Execute Management Commands
----------------------------
-
-As with any shell command that we wish to run in our container, this is done using the ``run --rm`` command: ::
-
-    $ docker-compose -f local.yml run --rm django python manage.py collectstatic
-
-Here, ``django`` is the target service we are executing the commands against.
-
-Build the Stack
--------------
-
-Open a terminal at the project root and run the following for local development::
-
-    $ docker-compose -f local.yml up
 
 Run on
 
     http://localhost:8001
-
-
-Execute PORTAINER.io
----------------------------
-
-Run on
-
-    http://localhost:9000
