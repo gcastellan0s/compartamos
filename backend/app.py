@@ -7,8 +7,8 @@ from twilio.rest import Client
 
 app = Flask(__name__)
 
-# CORS(app)
-CORS(app, resources={r"/api/*": {"origins": "0.0.0.0:8080"}})
+CORS(app)
+#CORS(app, resources={r"/api/*": {"origins": "0.0.0.0:8080"}})
 
 app.config["DEBUG"] = True
 client = MongoClient('mongodb://debug:debug@mongo:27017')
