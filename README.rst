@@ -42,7 +42,7 @@ Ejecuta el proyecto
 
 Abra su terminal y corra el siguiente comando para desarrollo::
 
-    $ docker-compose -f local.yml build
+    $ docker-compose -f local.yml up
 
 Run on
 
