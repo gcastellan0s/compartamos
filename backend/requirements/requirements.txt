@@ -1,0 +1,5 @@
+flask
+redis
+pymongo
+Flask-Cors
+twilio

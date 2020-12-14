@@ -1,0 +1,7 @@
+# Djongo
+# ------------------------------------------------------------------------------
+MONGO_HOST=mongo
+MONGO_PORT=27017
+MONGO_DB=compartamos
+MONGO_USER=debug
+MONGO_PASSWORD=debug

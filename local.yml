@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+
+  flask:
+    build:
+      context: .
+      dockerfile: ./docker/local/flask/Dockerfile
+    container_name: flask
+    volumes:
+      - ./backend:/app:z
+    ports:
+      - "5000:5000"
+
+  mongo:
+    image: mongo:4.4.2-bionic
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: debug
+      MONGO_INITDB_ROOT_PASSWORD: debug
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: debug
+      ME_CONFIG_MONGODB_ADMINPASSWORD: debug
+
+  quasar:
+    build:
+      context: .
+      dockerfile: ./docker/local/quasar/Dockerfile
+    image: quasar
+    container_name: quasar
+    env_file:
+      - ./.envs/.local/.quasar
+    volumes:
+      - ./frontend:/app:z
+      - /app/node_modules
+    command: npm run dev
+    ports:
+      - "8080:8080"
+
+  nginx:
+    container_name: nginx
+    image: nginx:alpine
+    volumes:
+      - ./nginx/local.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8001:80"
+    depends_on:
+      - flask
+      - quasar

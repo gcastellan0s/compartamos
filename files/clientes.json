@@ -1,0 +1,26 @@
+[
+  {
+    "numero_tarjeta": "4316166112234820",
+    "nombre": "ALMA PEREZ A",
+    "fecha_vencimiento_mes": "08",
+    "fecha_vencimiento_ano": "2021",
+    "numero_cuenta": "1545489423",
+    "nip": "6521"
+  },
+  {
+    "numero_tarjeta": "5214169112236820",
+    "nombre": "YURI GAMBO G",
+    "fecha_vencimiento_mes": "10",
+    "fecha_vencimiento_ano": "2023",
+    "numero_cuenta": "1546789423",
+    "nip": "5925"
+  },
+  {
+    "numero_tarjeta": "4213168112236820",
+    "nombre": "ALEJANDRA GUTIERREZ D",
+    "fecha_vencimiento_mes": "01",
+    "fecha_vencimiento_ano": "2048",
+    "numero_cuenta": "1546239423",
+    "nip": "4769"
+  }
+]
