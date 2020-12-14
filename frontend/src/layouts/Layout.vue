@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          Compartamos App
+          GoNet App
         </q-toolbar-title>
         <div>App v{{ $q.version }}</div>
       </q-toolbar>

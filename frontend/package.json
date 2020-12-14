@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "0.0.1",
-  "description": "Compartamos App",
-  "productName": "Compartamos App",
+  "description": "GoNet App",
+  "productName": "GoNet App",
   "author": "@gcastellan0s",
   "private": true,
   "scripts": {

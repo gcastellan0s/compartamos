@@ -1,4 +1,4 @@
-COMPARTAMOS APP / EDICION DOCKER
+GoNet APP / EDICION DOCKER
 =======================
 
 .. image:: https://travis-ci.org/pydanny/cookiecutter-django.svg?branch=master
