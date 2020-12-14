@@ -43,7 +43,7 @@ services:
       - /app/node_modules
     command: npm run dev
     ports:
-      - "8080:8080"
+      - "8002:8002"
 
   nginx:
     container_name: nginx
